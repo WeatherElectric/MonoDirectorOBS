@@ -37,9 +37,6 @@
         <Reference Include="Assembly-CSharp">
             <HintPath>Links\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
         </Reference>
-        <Reference Include="BoneLib">
-            <HintPath>Links\Mods\BoneLib.dll</HintPath>
-        </Reference>
         <Reference Include="MonoDirector">
             <HintPath>Links\Mods\MonoDirector.dll</HintPath>
         </Reference>
