@@ -3,6 +3,8 @@ An OBS integration for MonoDirector.
 
 Starts recordings and stops recordings automatically when MonoDirector plays/stops.
 
+# THIS WILL NEVER WORK ON QUEST!
+
 ## Installation
 1. Download [MonoDirector](https://github.com/Not-Enough-Photons/MonoDirector/releases/tag/v1.1.0-release) and install it
 2. Download the latest release from the [releases page]() or [Thunderstore](https://thunderstore.io/c/bonelab/p/SoulWithMae/MonoDirectorOBS/)
