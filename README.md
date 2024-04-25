@@ -7,7 +7,7 @@ Starts recordings and stops recordings automatically when MonoDirector plays/sto
 
 ## Installation
 1. Download [MonoDirector](https://github.com/Not-Enough-Photons/MonoDirector/releases/tag/v1.1.0-release) and install it
-2. Download the latest release from the [releases page]() or [Thunderstore](https://thunderstore.io/c/bonelab/p/SoulWithMae/MonoDirectorOBS/)
+2. Download the latest release from the [releases page](https://github.com/WeatherElectric/MonoDirectorOBS/releases) or [Thunderstore](https://thunderstore.io/c/bonelab/p/SoulWithMae/MonoDirectorOBS/)
 3. Extract the zip file
 4. Place the "Mods" folder in your BONELAB directory
 5. Place the "UserLibs" folder in your BONELAB directory
