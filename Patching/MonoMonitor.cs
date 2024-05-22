@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 using NEP.MonoDirector.Core;
-using WeatherElectric.MonoDirectorOBS.OBS;
+using WeatherElectric.OBSControl.OBS;
 
 namespace WeatherElectric.MonoDirectorOBS.Patching;
 
@@ -27,14 +27,14 @@ internal static class MonoMonitor
     private static void OnPlay()
     {
         ModConsole.Msg("MD OnPlay Event fired", 1);
-        OBSBridge.StartRecording();
+        ObsBridge.StartRecording();
         ModConsole.Msg("Started recording in MD", 1);
     }
     
     private static void OnStop()
     {
         ModConsole.Msg("MD OnStopPlayback Event fired", 1);
-        OBSBridge.StopRecording();
+        ObsBridge.StopRecording();
         ModConsole.Msg("Stopped recording in MD", 1);
     }
 }

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OBSControl</name>
+    </assembly>
+    <members>
+        <member name="T:WeatherElectric.OBSControl.Main">
+            <inheritdoc />
+        </member>
+        <member name="M:WeatherElectric.OBSControl.Main.OnInitializeMelon">
+            <inheritdoc />
+        </member>
+        <member name="M:WeatherElectric.OBSControl.Main.OnLateInitializeMelon">
+            <inheritdoc />
+        </member>
+        <member name="M:WeatherElectric.OBSControl.Main.OnApplicationQuit">
+            <inheritdoc />
+        </member>
+        <member name="M:WeatherElectric.OBSControl.Main.OnUpdate">
+            <inheritdoc />
+        </member>
+        <member name="T:WeatherElectric.OBSControl.OBS.ObsBridge">
+            <summary>
+            Allows for control over OBS through it's websocket server.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnRecordStateChanged">
+            <summary>
+            Called when the recording state of OBS changes.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnReplayBufferSaved">
+            <summary>
+            Called when the replay buffer is saved in OBS.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnReplayBufferStateChanged">
+            <summary>
+            Called when the replay buffer state of OBS changes.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnStreamStateChanged">
+            <summary>
+            Called when the streaming state of OBS changes.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnSceneChanged">
+            <summary>
+            Called when the current scene in OBS changes.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnSceneCreated">
+            <summary>
+            Called when a new scene is created in OBS.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnVirtualCamStateChanged">
+            <summary>
+            Called when the virtual cam state of OBS changes.
+            </summary>
+        </member>
+        <member name="F:WeatherElectric.OBSControl.OBS.ObsBridge.OnSceneRemoved">
+            <summary>
+            Called when a scene is removed in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.GetScenes">
+            <summary>
+            Get a list of all scenes in the current OBS profile.
+            </summary>
+            <returns>List of SceneBasicInfo</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.SetScene(System.String)">
+            <summary>
+            Sets the active scene in OBS to the specified scene.
+            </summary>
+            <param name="sceneName">The name of the scene to change to</param>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsConnected">
+            <summary>
+            Check if OBS websocket is connected.
+            </summary>
+            <returns>True if connected, false if disconnected</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsRecording">
+            <summary>
+            Get the recording status of OBS.
+            </summary>
+            <returns>True if recording, false if not recording</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsRecordingPaused">
+            <summary>
+            Gets the recording paused status of OBS.
+            </summary>
+            <returns>True if recording is paused, false if not paused</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsStreaming">
+            <summary>
+            Get the streaming status of OBS.
+            </summary>
+            <returns>True if stremaing, false if not streaming</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsReplayBufferActive">
+            <summary>
+            Get the replay buffer status of OBS.
+            </summary>
+            <returns>True if active, false if inactive</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.IsVirtualCamActive">
+            <summary>
+            Get the virtual cam status of OBS.
+            </summary>
+            <returns>True if active, false if inactive</returns>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StartRecording">
+            <summary>
+            Start recording in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.PauseRecording">
+            <summary>
+            Pauses recording in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.ResumeRecording">
+            <summary>
+            Resumes recording in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StopRecording">
+            <summary>
+            Stops recording in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StartStreaming">
+            <summary>
+            Starts streaming in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StopStreaming">
+            <summary>
+            Stops streaming in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StartReplayBuffer">
+            <summary>
+            Starts the replay buffer in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.StopReplayBuffer">
+            <summary>
+            Stops the replay buffer in OBS.
+            </summary>
+        </member>
+        <member name="M:WeatherElectric.OBSControl.OBS.ObsBridge.SaveReplayBuffer">
+            <summary>
+            Saves the replay buffer in OBS.
+            </summary>
+        </member>
+    </members>
+</doc>
